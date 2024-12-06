@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+   body {
+     font-family: 'Arial', sans-serif;
+     background-color: #f8f9fa;
+   }
+
+   /* General Navbar Styling */
+   .navbar {
+     background-color: #2d2d2d;
+     transition: background-color 0.3s ease;
+     z-index: 9999;
+   }
+
+   /* Fixed Navbar */
+   .fixed-top {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+   }
+
+   /* Navbar Logo Styling */
+   .navbar-brand {
+     font-size: 2rem;
+     font-weight: bold;
+     color: #00ff15;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     transition: color 0.3s ease;
+   }
+
+   .navbar-brand:hover {
+     color: #ffffff;
+   }
+
+   /* Navbar Links Styling */
+   .navbar-nav .nav-item .nav-link {
+     font-size: 1rem;
+     font-weight: 500;
+     color: #ffffff;
+     margin-right: 15px;
+     transition: color 0.3s ease, transform 0.3s ease;
+   }
+
+   /* Navbar Hover Effects */
+   .navbar-nav .nav-item .nav-link:hover {
+     color: #1eff00;
+     transform: translateY(-3px);
+   }
+
+   /* Search Bar Styling */
+   .search-input {
+     background-color: #333333;
+     color: #ffffff;
+     border: none;
+     padding: 10px 15px;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+     width: 200px;
+   }
+
+   .search-input:focus {
+     background-color: #00b894;
+     color: white;
+     transform: translateX(5px);
+   }
+
+   .search-input::placeholder {
+     color: #bbb;
+   }
+
+   /* Navbar Background Hover Effect */
+   .navbar:hover {
+     background-color: #212121;
+   }
+
+   /* Mobile Navbar Styling */
+   @media (max-width: 768px) {
+     .navbar-nav {
+       text-align: center;
+     }
+
+     .navbar-nav .nav-item {
+       margin-bottom: 10px;
+
+     }
+
+     .search-input {
+       width: 100%;
+     }
+   }
+
+   .about-section img{
+    max-height: 300px;
+   }
+
+   .card img{
+    margin: auto;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+      }

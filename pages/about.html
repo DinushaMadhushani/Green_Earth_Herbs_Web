@@ -1,101 +1,218 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>About</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width;initial-scale=1.0" />
-    <title>Herbals Lanka</title>
-    <link rel="stylesheet" href="style 2.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
-      integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" 
-    />
-  </head>
-  <body>
+<html lang="en">
 
+<head>
+  <title>About - Herbsage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="style 2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="../assets/css/about_styles .css">
+  <style>
+    /* Custom styles for About Page */
+    .hero-banner {
+      background-color: #f0f8ff;
+      padding: 80px 0;
+      text-align: center;
+      color: #34495e;
+      border-radius: 10px;
+    }
 
-    <!-- navigation -->
-    <div class="navigation">
-      <div class="logo">
-        <h1>Herbsage</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Herbs.html">Herbs</a></li>
-          <li><a href="contact.html">Contact</a></li>
+    .hero-banner h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero-banner p {
+      font-size: 1.2rem;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .about-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .about-section img:hover {
+      transform: scale(1.05);
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body p i {
+      color: #2ecc71;
+    }
+
+    .footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #2ecc71;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand logo" href="../index.html">Herbsage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Herbs.html">Herbs</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
         </ul>
-      </nav>
-
-      <form action="">
-        <input
-          type="text"
-          value="search"
-          id="sbtn-box"
-          placeholder="search..."
-        />
+      </div>
+      <form action="" class="d-flex ms-3">
+        <input type="text" class="form-control rounded-pill search-input" placeholder="Search..." id="sbtn-box" />
       </form>
     </div>
+  </header>
 
-    <!--HEADING,CONTENT-->
+  <!-- About Section (Hero) -->
+  <section class="hero-banner" data-aos="fade-up">
+    <div class="container">
+      <h1>Welcome to Herbsage</h1>
+      <p>Explore the Healing Power of Nature Through Our Premium Herbal Solutions</p>
+    </div>
+  </section>
 
-    <section class="about">
-      <div class="heading">
-        <h1>About Us</h1>
+  <!-- About Us -->
+  <section class="about py-5">
+    <div class="container">
+      <div class="heading text-center mb-5" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p class="lead">Our journey into herbal wellness started with a mission to provide the finest herbal solutions for a balanced life.</p>
       </div>
 
-      <div class="main">
-        <div class="container">
-          <div class="content">
-            <h2>Welcome To Our Website</h2>
-            <p>
-              Welcome to our herbal details hub,where we delve into the intricate world of botanical wonders.We are passionate about sharing in-depth information on herbs and their properties. Join us in exploring the rich tapestry of herbal knowledge as we strive to empower you with insights for a healtheir,more balanced life.
-            </p>
+      <!-- Introduction Section -->
+      <div class="row mb-5 about-section">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h3>Who We Are</h3>
+          <p>At Herbsage, we are committed to promoting natural healing through herbal remedies. We believe in the transformative power of plants, bringing you herbs that have been handpicked for their unique benefits. Our goal is to educate you on herbal wellness, help you live a more balanced life, and explore the wonders of nature’s pharmacy.</p>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <img src="../assets/images/herbs.png" class="img-fluid rounded " alt="Herbsage" />
+        </div>
+      </div>
+
+     <!-- Mission and Vision -->
+<div class="row mb-5">
+  <!-- Mission Card -->
+  <div class="col-lg-6 mb-4" data-aos="fade-up">
+    <div class="card shadow-sm border-light">
+      <div class="card-body text-center">
+        <i class="fas fa-bullseye fa-3x mb-3 text-success"></i>
+        <h4 class="card-title mb-3">Our Mission</h4>
+        <p class="card-text text-muted">We aim to provide sustainable herbal products that promote a healthy, balanced life. Empowering people with knowledge to embrace herbal solutions for better health and wellness.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vision Card -->
+  <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="card shadow-sm border-light">
+      <div class="card-body text-center">
+        <i class="fas fa-globe fa-3x mb-3 text-info"></i>
+        <h4 class="card-title mb-3">Our Vision</h4>
+        <p class="card-text text-muted">Our vision is to lead globally in natural wellness products, making herbal solutions accessible to all. We envision a world where natural remedies are embraced for their healing power and sustainability.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Team Section -->
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg-12 text-center mb-4">
+          <h3>Meet Our Team</h3>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up">
+          <div class="card shadow-lg">
+            <img src="../assets/images/User 1.jpg" class="card-img-top" alt="Team Member 2">
+            <div class="card-body">
+              <h5 class="card-title">Nirosha Madhuwanthi</h5>
+              <p class="card-text">Herbal Specialist</p>
+              <p><i class="fas fa-leaf"></i> Expert in herbal remedies and natural health solutions.</p>
+            </div>
           </div>
         </div>
-
-
-        <!--IMAGE ABOUT-->
-        <div class="image">
-          <img src="image/image2.jpg" />
+        <div class="col-md-4 text-center" data-aos="fade-right">
+          <div class="card shadow-lg">
+            <img src="../assets/images/User 2.jpg" class="card-img-top" alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">Dinusha Madushani</h5>
+              <p class="card-text">Founder & CEO</p>
+              <p><i class="fas fa-briefcase"></i> Visionary leader with a passion for holistic wellness and herbal medicine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-left">
+          <div class="card shadow-lg">
+            <img src="../assets/images/User 3.jpg" class="card-img-top" alt="Team Member 3">
+            <div class="card-body">
+              <h5 class="card-title">Rangana Harshini</h5>
+              <p class="card-text">Product Manager</p>
+              <p><i class="fas fa-cogs"></i> Oversees product development, ensuring the highest quality herbal products.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-
-    <!--FOOTER-->
-    <footer>
-      <div class="footerContainer">
-        <div class="socialIcons">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-google-plus"></i></a>
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
+    <!-- Footer Section -->
+    <footer class="footer text-center py-4 mt-auto bg-dark text-white">
+      <h3 class="footer-title">Herbs Lanka 2023</h3>
+      <!-- Social Media Icons -->
+      <div class="social-icons mb-3">
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
-      <div class="footerNav">
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Herbs.html">Herbs</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="new">
-          <h4>@ Herbs Lanka 2023</h4>
-        </div>
+      <!-- Footer Copyright -->
+      <div class="mt-1">
+        <p class="mb-0">Made by: Dinusha Madushani &copy; 2023</p>
       </div>
     </footer>
-  </body>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

@@ -5,26 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width;initial-scale=1.0" />
     <title>Herbals Lanka</title>
-    <link rel="stylesheet" href="style 3.css" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/herbs_style.css">
     
   </head>
     
-    <!-- navigation -->
-    <div class="navigation">
-      <div class="logo">
-        <h1>Herbsage</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Herbs.html">Herbs</a></li>
-          <li><a href="contact.html">Contact</a></li>
+  <!-- Navigation -->
+  <header class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand logo" href="../index.html">Herbsage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Herbs.html">Herbs</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
         </ul>
-      </nav>
-
+      </div>
+      <form action="" class="d-flex ms-3">
+        <input type="text" class="form-control rounded-pill search-input" placeholder="Search..." id="sbtn-box" />
+      </form>
+    </div>
+  </header>
       
       <form action="">
       <input type="text" value="search" id="sbtn-box" placeholder="search..."/>
@@ -323,33 +330,30 @@ helminthic, protozoal and bacterial infections due to its unique composition and
 </br>
 
 
-<!--FOOTER-->
+    <!-- Footer Section -->
+    <footer class="footer text-center py-4 mt-auto bg-dark text-white">
+      <h3 class="footer-title">Herbs Lanka 2023</h3>
+      <!-- Social Media Icons -->
+      <div class="social-icons mb-3">
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <!-- Footer Copyright -->
+      <div class="mt-1">
+        <p class="mb-0">Made by: Dinusha Madushani &copy; 2023</p>
+      </div>
+    </footer>
 
-
-<footer>
-  <div class="footerContainer">
-    <div class="socialIcons">
-      <a href=""><i class="fa-brands fa-facebook"></i></a>
-      <a href=""><i class="fa-brands fa-instagram"></i></a>
-      <a href=""><i class="fa-brands fa-twitter"></i></a>
-      <a href=""><i class="fa-brands fa-google-plus"></i></a>
-      <a href=""><i class="fa-brands fa-youtube"></i></a>
-      
-    </div>
-   </div>
-   <div class="footerNav">
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="Herbs.html">Herbs</a></li>
-      <li><a href="contact.html">Contact</a></li>
-
-    </ul>
-    <div class="new">
-    <h4>@ Herbs Lanka 2023</h4>
-   </div>
-   </div>
-  </footer>
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

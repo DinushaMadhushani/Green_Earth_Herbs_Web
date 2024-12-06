@@ -1,75 +1,231 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>contact</title>
-   
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width;initial-scale=1.0" />
-    <title>Herbals Lanka</title>
-    <link rel="stylesheet" href="style 4.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
-    
-  </head>
-  <body>
-    <!-- navigation -->
-    <div class="navigation">
-      <div class="logo">
-        <h1>Herbsage</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Herbs.html">Herbs</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Herbsage</title>
 
-      
-      <form action="">
-      <input type="text" value="search" id="sbtn-box" placeholder="search..."/>
-      
-       </form>
-    </div>
-      
-    
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style 4.css" />
+
+  <style>
+       /* General Navbar Styling */
+   .navbar {
+     background-color: #2d2d2d;
+     transition: background-color 0.3s ease;
+     z-index: 9999;
+   }
+
+   /* Fixed Navbar */
+   .fixed-top {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+   }
+
+   /* Navbar Logo Styling */
+   .navbar-brand {
+     font-size: 2rem;
+     font-weight: bold;
+     color: #00ff15;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     transition: color 0.3s ease;
+   }
+
+   .navbar-brand:hover {
+     color: #ffffff;
+   }
+
+   /* Navbar Links Styling */
+   .navbar-nav .nav-item .nav-link {
+     font-size: 1rem;
+     font-weight: 500;
+     color: #ffffff;
+     margin-right: 15px;
+     transition: color 0.3s ease, transform 0.3s ease;
+   }
+
+   /* Navbar Hover Effects */
+   .navbar-nav .nav-item .nav-link:hover {
+     color: #1eff00;
+     transform: translateY(-3px);
+   }
+
+   /* Search Bar Styling */
+   .search-input {
+     background-color: #333333;
+     color: #ffffff;
+     border: none;
+     padding: 10px 15px;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+     width: 200px;
+   }
+
+   .search-input:focus {
+     background-color: #00b894;
+     color: white;
+     transform: translateX(5px);
+   }
+
+   .search-input::placeholder {
+     color: #bbb;
+   }
+
+   /* Navbar Background Hover Effect */
+   .navbar:hover {
+     background-color: #212121;
+   }
+
+   /* Mobile Navbar Styling */
+   @media (max-width: 768px) {
+     .navbar-nav {
+       text-align: center;
+     }
+
+     .navbar-nav .nav-item {
+       margin-bottom: 10px;
+
+     }
+
+     .search-input {
+       width: 100%;
+     }
+   }
+
+    /* Custom Styles */
+    .form-control {
+      border-radius: 0.375rem;
+      margin-bottom: 1rem;
+    }
+    textarea {
+      width: 100%;
+      border-radius: 0.375rem;
+      padding: 10px;
+      resize: none;
+      height: 150px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand logo" href="../index.html">Herbsage</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./Herbs.html">Herbs</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <form action="" class="d-flex ms-3">
+          <input type="text" class="form-control rounded-pill search-input" placeholder="Search..." id="sbtn-box" />
+        </form>
+      </div>
+    </header>
+
+  <!-- Contact Section -->
+  <section class="contact py-5 mt-5" data-aos="fade-up">
     <div class="container">
-      <form>
-        
-        <h1>Contact Us</h1>
-        <input type="text" id="firstName" placeholder="FirstName" required>
-        <input type="text" id="LastName" placeholder="LastName" required>
-        <input type="email" id="Email" placeholder="Email" required>
-        <input type="text" id="Mobile" placeholder="Mobile" required>
-        <h4>Type Your Massage Here...</h4>
-        <textarea required></textarea>
-        <input type="submit" value="send" id="button">
-      </form>
-    </div>
-   
-        
-    
-    <footer>
-      <div class="footerContainer">
-        <div class="socialIcons">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-google-plus"></i></a>
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
+      <div class="text-center mb-5">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you. Please feel free to reach out with any questions or inquiries.</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="footerNav">
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Herbs.html">Herbs</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="new">
-          <h4>@ Herbs Lanka 2023</h4>
+    </div>
+  </section>
+
+  <!-- Additional Contact Info Section -->
+  <section class="contact-info bg-light py-5" data-aos="fade-up" data-aos-delay="200">
+    <div class="container text-center">
+      <h3>Visit Us</h3>
+      <p>If you have any inquiries, don't hesitate to contact us or visit our office.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
+          <p>123 Herbal Avenue, Colombo, Sri Lanka</p>
         </div>
+        <div class="col-md-4">
+          <h5><i class="fas fa-phone-alt"></i> Phone</h5>
+          <p>(+94) 123 456 789</p>
+        </div>
+        <div class="col-md-4">
+          <h5><i class="fas fa-envelope"></i> Email</h5>
+          <p>contact@herbsage.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center py-4 mt-auto bg-dark text-white">
+      <h3 class="footer-title">Herbs Lanka 2023</h3>
+      <!-- Social Media Icons -->
+      <div class="social-icons mb-3">
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <!-- Footer Copyright -->
+      <div class="mt-1">
+        <p class="mb-0">Made by: Dinusha Madushani &copy; 2023</p>
       </div>
     </footer>
-   
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
