@@ -6,303 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Herbals Lanka</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- AOS (Animate on Scroll) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/css/index_styles.css">
 
-  <style>
-    /* Custom Styles */
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f8f9fa;
-    }
-
-    /* General Navbar Styling */
-.navbar {
-    background-color: #2d2d2d; /* Dark background for the navbar */
-    transition: background-color 0.3s ease; /* Smooth background transition */
-    z-index: 9999; /* Ensures the navbar stays on top */
-}
-
-/* Fixed Navbar */
-.fixed-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-/* Navbar Logo Styling */
-.navbar-brand {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #00b894; /* Accent color for the logo */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: color 0.3s ease;
-}
-
-.navbar-brand:hover {
-    color: #ffffff; /* White color on hover */
-}
-
-/* Navbar Links Styling */
-.navbar-nav .nav-item .nav-link {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #ffffff; /* White text for links */
-    margin-right: 15px;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-/* Navbar Hover Effects */
-.navbar-nav .nav-item .nav-link:hover {
-    color: #00b894; /* Green hover color */
-    transform: translateY(-3px); /* Slightly lift the nav link */
-}
-
-/* Search Bar Styling */
-.search-input {
-    background-color: #333333; /* Dark background for search input */
-    color: #ffffff; /* White text */
-    border: none;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    width: 200px;
-}
-
-.search-input:focus {
-    background-color: #00b894; /* Green background on focus */
-    color: white;
-    transform: translateX(5px); /* Move search bar slightly on focus */
-}
-
-.search-input::placeholder {
-    color: #bbb; /* Light gray placeholder text */
-}
-
-/* Navbar Background Hover Effect */
-.navbar:hover {
-    background-color: #212121; /* Darken the navbar on hover */
-}
-
-/* Mobile Navbar Styling */
-@media (max-width: 768px) {
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 10px; /* Add margin for mobile */
-    }
-
-    .search-input {
-        width: 100%; /* Full width on small screens */
-    }
-}
-
-    /* Hero Section Styling */
-.hero-section {
-    background-image: url('./assets/images/image1.jpg'); /* Add your hero image */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 100px 0;
-    color: #00b894;
-    text-align: center;
-    position: relative;
-    height: 100vh; /* Make it full viewport height */
-}
-
-.glass{
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-padding: 40px;
-max-width: 500px;
-
-}
-
-
-/* Hero Text Styling */
-.hero-title {
-  color: #00b894;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.hero-subtitle {
-  color: #00b894; /* Accent green color */
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.hero-description {
-  color: #00b894; /* Accent green color */
-    font-size: 1.1rem;
-    font-weight: 300;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-/* Button Styling */
-.hero-btn {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 12px 40px;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px;
-}
-
-/* Hover and Animation Effects */
-.hero-btn:hover {
-    background-color: #00b894; /* Green hover color */
-    transform: translateY(-5px); /* Button lift effect */
-    color: white;
-}
-
-/* Animation for Hero Section Text */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-[data-aos="fade-up"] {
-    animation: fadeInUp 1s ease-out;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
-    }
-
-    .hero-btn {
-        font-size: 1rem;
-        padding: 10px 30px;
-    }
-}
-
-    /* Basic Footer Styling */
-.footer {
-    background-color: #343a40; /* Dark background */
-    color: white; /* White text */
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Footer Title Styling */
-.footer-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #00b894; /* Accent green color */
-    margin-bottom: 20px;
-}
-
-/* Social Media Icons Styling */
-.social-icons a {
-     color: #00b894; /* Accent green color */
-    font-size: 1.8rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #00b894; /* Green color on hover */
-    transform: scale(1.1); /* Slightly scale up the icons */
-}
-
-/* Footer Copyright Styling */
-.footer p {
-
-    font-size: 0.9rem;
-    color: #bbb; /* Light grey text for copyright */
-}
-
-/* Make Footer Responsive */
-@media (max-width: 768px) {
-    .footer-title {
-        font-size: 1.5rem;
-    }
-
-    .social-icons a {
-        font-size: 1.5rem;
-    }
-}
-
-  </style>
 </head>
 
 <body>
-<!-- Navigation -->
-<header class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand logo" href="./index.html">Herbsage</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="./pages/Herbs.html">Herbs</a></li>
-        <li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contact</a></li>
-      </ul>
+  <!-- Navigation -->
+  <header class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand logo" href="./index.html">Herbsage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/Herbs.html">Herbs</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <form action="" class="d-flex ms-3">
+        <input type="text" class="form-control rounded-pill search-input" placeholder="Search..." id="sbtn-box" />
+      </form>
     </div>
-    <form action="" class="d-flex ms-3">
-      <input type="text" class="form-control rounded-pill search-input" placeholder="Search..." id="sbtn-box" />
-    </form>
-  </div>
-</header>
+  </header>
 
 
-<!-- Hero Section -->
-<section class="hero-section position-relative">
+  <!-- Hero Section -->
+  <section class="hero-section position-relative">
 
-  <div class="container text-center text-white position-relative z-index-2 glass" data-aos="fade-up">
-    <h2 class="hero-title display-4 fw-bold">Green Earth Herbs</h2>
-    <h3 class="hero-subtitle h4 mb-4">Exploring Herbal Wonders</h3>
+    <div class="container text-center text-white position-relative z-index-2 glass" data-aos="fade-up">
+      <h2 class="hero-title display-4 fw-bold">Green Earth Herbs</h2>
+      <h3 class="hero-subtitle h4 mb-4">Exploring Herbal Wonders</h3>
 
-    <p class="hero-description mb-5">
-      Discover the power of nature with the finest herbs that support your health and well-being. Join us on a journey through the world of herbal remedies, sustainable farming, and natural wellness.
-    </p>
+      <p class="hero-description mb-5">
+        Discover the power of nature with the finest herbs that support your health and well-being. Join us on a journey
+        through the world of herbal remedies, sustainable farming, and natural wellness.
+      </p>
 
-    <a href="#about" class="btn btn-light btn-lg hero-btn" data-aos="fade-up" data-aos-delay="500">Learn More</a>
-  </div>
-</section>
+      <a href="#about" class="btn btn-light btn-lg hero-btn" data-aos="fade-up" data-aos-delay="500">Learn More</a>
+    </div>
+  </section>
 
 
   <footer class="footer text-center py-4 mt-auto">
@@ -310,18 +62,18 @@ max-width: 500px;
 
     <!-- Social Media Icons -->
     <div class="social-icons mb-3">
-        <a href="#" class="mx-3" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="mx-3" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="mx-3" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="mx-3" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-        <a href="#" class="mx-3" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="mx-3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="mx-3" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="mx-3" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="mx-3" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+      <a href="#" class="mx-3" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
 
     <!-- Footer Copyright -->
     <div class="mt-1">
-        <p class="mb-0">Made by: Dinusha Madushani &copy; 2023</p>
+      <p class="mb-0">Made by: Dinusha Madushani &copy; 2023</p>
     </div>
-</footer>
+  </footer>
 
 
 
