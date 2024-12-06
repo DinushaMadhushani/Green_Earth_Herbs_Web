@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herbals Lanka</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #2d2d2d;
+    }
+
+    .navbar-brand {
+      color: #ffffff !important;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffffff !important;
+      transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #00b894 !important;
+    }
+
+    .hero-section {
+      background-image: url('./image/image1.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-section h2 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero-section h3 {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+    @media (max-width: 768px) {
+      .hero-section h2 {
+        font-size: 2.5rem;
+      }
+
+      .hero-section h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* Basic Footer Styling */
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: white; /* White text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Footer Title Styling */
+.footer-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00b894; /* Accent green color */
+    margin-bottom: 20px;
+}
+
+/* Social Media Icons Styling */
+.social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00b894; /* Green color on hover */
+    transform: scale(1.1); /* Slightly scale up the icons */
+}
+
+/* Footer Copyright Styling */
+.footer p {
+    font-size: 0.9rem;
+    color: #bbb; /* Light grey text for copyright */
+}
+
+/* Make Footer Responsive */
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 1.5rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">Herbsage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/Herbs.html">Herbs</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <form action="" class="d-flex ms-3">
+        <input type="text" class="form-control rounded-pill" placeholder="Search..." id="sbtn-box" />
+      </form>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="text-center" data-aos="fade-up">
+      <h2>Green Earth Herbs</h2>
+      <h3>Exploring Herbal Wonders</h3>
+    </div>
+  </section>
+
+  <footer class="footer text-center py-4 mt-auto">
+    <h3 class="footer-title">Herbs Lanka 2023</h3>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons mb-3">
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="mx-3" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- Footer Copyright -->
+    <div class="mt-1">
+        <p class="mb-0 text-muted">Made by: Dinusha Madushani &copy; 2023</p>
+    </div>
+</footer>
+
+
+
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
